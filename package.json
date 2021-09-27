@@ -12,7 +12,7 @@
     "cli"
   ],
   "author": "KAAAsS",
-  "license": "ISC",
+  "license": "GPLv3",
   "dependencies": {
     "commander": "^8.2.0",
     "costflow": "^1.1.3"
