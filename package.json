@@ -1,0 +1,23 @@
+{
+  "name": "costflow-parser-simple-wrapper",
+  "version": "1.0.0",
+  "description": "A simple CLI wrapper for costflow parser",
+  "main": "app.js",
+  "scripts": {
+    "run": "node app.js",
+    "build": "node esbuild.prod.cjs"
+  },
+  "keywords": [
+    "costflow",
+    "cli"
+  ],
+  "author": "KAAAsS",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^8.2.0",
+    "costflow": "^1.1.3"
+  },
+  "devDependencies": {
+    "esbuild": "^0.13.2"
+  }
+}
