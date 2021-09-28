@@ -41,10 +41,20 @@ try {
 /*
  * Parse command
  */
+
+/**
+ * Escape UTF-8 in JSON
+ * @param s
+ * @returns {*}
+ */
+function jsonEscapeUTF(s) {
+    return s.replace(/[^\x20-\x7F]/g, x => "\\u" + ("000" + x.codePointAt(0).toString(16)).slice(-4))
+}
+
 (async () => {
     let ret = await costflow.parse(command, config);
     if (jsonOutput) {
-        console.log(JSON.stringify(ret));
+        console.log(jsonEscapeUTF(JSON.stringify(ret)));
     } else {
         console.log(ret.output);
     }

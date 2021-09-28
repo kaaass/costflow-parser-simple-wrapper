@@ -1,10 +1,10 @@
 {
   "name": "costflow-parser-simple-wrapper",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple CLI wrapper for costflow parser",
   "main": "app.js",
   "scripts": {
-    "run": "node app.js",
+    "app": "node app.js",
     "build": "node esbuild.prod.cjs"
   },
   "keywords": [
